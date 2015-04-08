@@ -71,14 +71,14 @@ public class Snowman extends Application {
                 	gc.setFill(Color.BLACK);
                 	gc.fillRect(0, 0, W, H); //when the sun is down, it is night time
                 } else {
-                	gc.setFill(Color.WHITE);
+                	gc.setFill(Color.DEEPSKYBLUE);
                 	gc.fillRect(0, 0, W, H); //when the sun comes out, it is day time
                 }
                 gc.setFill(Color.YELLOW); //the sun will only show up when it is above the horizon
                 gc.fillOval(x.doubleValue(),y.doubleValue(),D,D);
                 gc.setFill(Color.GREEN); //the ground/horizon
                 gc.fillRect(0, Z, W, H);
-                gc.setFill(Color.RED); //color of snowman
+                gc.setFill(Color.WHITE); //color of snowman
                 double feetX = W*.53;
                 double bodyX = W*.545;
                 double headX = W*.555;
